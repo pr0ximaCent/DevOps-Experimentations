@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Frontend Page</title>
+</head>
+<body>
+    <h1 id="heading">Loading...</h1>
+    <p id="subtext"></p>
+    <script>
+        // Fetch data from backend
+        fetch("http://localhost:8000")
+            .then(async (response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const result = await response.json();
+                // Update the page with data
+                document.getElementById("heading").innerText = result.message || "No message found";
+                document.getElementById("subtext").innerText = "Data fetched successfully.";
+            })
+            .catch((error) => {
+                // Handle errors
+                document.getElementById("heading").innerText = "Failed to load data.";
+                document.getElementById("subtext").innerText = error.message;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
+  
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3000:3000"
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./k8s/ingress.yaml:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
