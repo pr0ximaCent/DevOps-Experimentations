@@ -1,4 +1,4 @@
-````markdown
+
 # DevOps Monorepo
 
 A unified repository demonstrating key DevOps patterns: optimized container builds, CI/CD automation, advanced network isolation, and Kubernetes ingress routing.
