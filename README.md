@@ -3,6 +3,13 @@
 
 A unified repository demonstrating key DevOps patterns: optimized container builds, CI/CD automation, advanced network isolation, and Kubernetes ingress routing.
 
+## Project Links
+
+- [Multi-stage Dockerfile Development](https://github.com/pr0ximaCent/Multi-stage-Dockerfile-Development-)  
+- [CI-CD Pipeline Implementation](https://github.com/pr0ximaCent/-CI-CD-Pipeline-Implementation)  
+- [Custom Network Configuration](https://github.com/pr0ximaCent/Custom-Network-Configuration)  
+- [Ingress Controller Setup](https://github.com/pr0ximaCent/Ingress-Controller-Setup)  
+
 ---
 
 ## Table of Contents
